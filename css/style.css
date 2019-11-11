@@ -441,16 +441,16 @@ article p:last-child{
 /*                   *******     Slider     ********/
 
 .social_button,
-.git div:first-child,
-.twitter div:first-child,
-.facebook div:first-child {
+.git button,
+.twitter button,
+.facebook button {
 	display: flex;
 	align-items: center;
 }
 
-.git div:first-child,
-.twitter div:first-child,
-.facebook div:first-child {
+.git button,
+.twitter button,
+.facebook button {
 	width: 16.1rem;
 	height: 3.3rem;
 	border-radius: 5px;
@@ -464,21 +464,39 @@ article p:last-child{
 	margin-left: 1.6rem
 }
 
-.git div:first-child{
+.git button{
 	background: #f3f3f3;
+	outline: none;
 }
-.twitter div:first-child{
+
+.git button:hover {
+transform: scale(1.1);
+}
+
+.twitter button{
 	background: #26a6d1;
 	color: #fff;
 	margin: 0 2.5rem;
+	outline: none;
 }
-.facebook div:first-child{
+
+.twitter button:hover {
+transform: scale(1.1);
+}
+
+.facebook button{
 	background: #3b5998;
 	color: #fff;
+	outline: none;
 }
-.git div:last-child,
-.twitter div:last-child,
-.facebook div:last-child{
+
+.facebook button:hover {
+transform: scale(1.1);
+}
+
+.git p:nth-child(1),
+.twitter p:nth-child(1),
+.facebook p:nth-child(1){
 	font-size: .9rem;
 	color: #848e97;
 	text-align: center;
