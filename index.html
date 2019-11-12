@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Fork App</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Source+Sans+Pro:400,700,700i&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <!-- 		                  *****   HEADER   ****** -->
@@ -22,11 +24,33 @@
 					<li><a href="#">About Fork</a></li>
 					<li><a href="#">Buying Options</a></li>
 					<li><a href="#">Support</a></li>
-					<li><button>Buy Now</button></li>
 				</ul>
-				<div class="burger"><span></span></div>
 			</nav>
+			<button>Buy Now</button>
+			<div class="menu">
+    <div class="menu__icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <div class="menu__links">
+    	<div><a class="menu__links-item" href="#">Home</a></div>
+    	<a class="menu__links-item" href="#">Overview</a>
+        <a class="menu__links-item" href="#">About Fork</a>
+        <a class="menu__links-item" href="#">Buying Options</a>
+        <a class="menu__links-item" href="#">Support</a>
+        <a class="menu__links-item" href="#">Follow Us</a>
+        <div class="menu_link_social">
+        	<a class="menu__links-item">About Fork</a>
+        	<a href=""></a>
+        	<a href=""></a>
+        </div>
+    </div>
+</div>
 		</div>
+
 	</header>
 <!-- 	                     *****   MAIN SECTION 1   ****** -->
 	<main>
@@ -168,31 +192,72 @@
 				<div><h2>People Are Talking About Fork</h2></div>
 				<div class="brands">
 					<div class="grid_item">
-						<img src="img/logo1.png" alt="">
+						<img src="img/logo1.png" id="logo1" alt="">
 						<p><em>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </em></p>
 					</div>
 					<div class="grid_item">
-						<img src="img/logo2.png" alt="">
+						<img src="img/logo2.png"  id="logo2" alt="">
 						<p><em>Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</em></p>
 					</div>
 					<div class="grid_item">
-						<img src="img/logo3.png" alt="">
+						<img src="img/logo3.png"  id="logo3" alt="">
 						<p><em>In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </em></p>
 					</div>
 					<div class="grid_item">
-						<img src="img/logo4.png" alt="">
+						<img src="img/logo4.png"  id="logo4" alt="">
 						<p><em>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </em></p>
 					</div>
 					<div class="grid_item">
-						<img src="img/logo5.png" alt="">
+						<img src="img/logo5.png"  id="logo5" alt="">
 						<p><em>Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. </em></p>
 					</div>
 					<div class="grid_item">
-						<img src="img/logo6.png" alt="">
+						<img src="img/logo6.png"  id="logo6" alt="">
 						<p><em>Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</em></p>
 					</div>
 				</div>
 				<div class="string"></div>
+			</div>
+		</section>
+<!--                      	*****   MAIN SECTION 6   ****** -->
+		<section class="buy">
+			<div class="container marketplace">
+				<h2>Fork Subscription Pricing</h2>
+				<div class="price">
+					<button>
+						<div><p>Students</p></div>
+							<p>$29</p>
+							<p>Per month</p>
+						<div class="str"></div>
+						<p>Personal License <br></p>
+						<div class="bt bias"><p>Purchase</p></div>
+					</button>
+					<button>
+						<div><p>Professional</p></div>
+							<p>$59</p>
+							<p>Per month</p>
+						<div class="str"></div>
+						<p>Professional License <br>Email Support</p>
+						<div class="bt"><p>Purchase</p></div>
+					</button>
+					<button>
+						<div><p>agency</p></div>
+							<p>$99</p>
+							<p>Per month</p>
+						<div class="str"></div>
+						<p>1-12 Team Members<br>Phone Support </p>
+						<div class="bt"><p>Purchase</p></div>
+					</button>
+					<button>
+						<div><p>enterprise</p></div>
+							<p>$159</p>
+							<p>Per month</p>
+						<div class="str"></div>
+						<p>Unlimited Team Members<br>24/ 7 Phone Support</p>
+						<div class="bt"><p>Purchase</p></div>
+					</button>
+				</div>
+				<p>Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
 			</div>
 		</section>
 <!--                      	*****   MAIN SECTION 6   ****** -->
@@ -205,5 +270,8 @@
 	<footer>
 		
 	</footer>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="main.js"></script>
 </body>
 </html>

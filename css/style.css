@@ -43,8 +43,8 @@ a {
 }
 
 .container{
-	width: 100%;
-	max-width: 1170px;
+	width: 80%;
+	max-width: 73.1rem;
 	margin: 0 auto;
 }
 body{
@@ -73,6 +73,10 @@ header {
 	font-size: 1.8rem;
 	font-weight: 700;
 }
+.logo img{
+	width: 2.7rem;
+	height: auto;
+}
 
 .fork{
 	margin-left: 1rem;
@@ -89,7 +93,7 @@ header ul{
 }
 
 header li{
-	margin-left: 40px;
+	margin-left: 2.5rem;
   	font-weight: 700;
 }
 
@@ -105,9 +109,9 @@ header li a:hover {
 header button {
 	text-align:center;
 	background: #8d81ac;
-	width: 147px;
-	height: 40px;
-	border-radius: 20px;
+	width: 9.2rem;
+	height: 2.5rem;
+	border-radius: 1.3rem;
 	color: #fff;
 	font-weight: 700;
 	outline: none;
@@ -118,6 +122,93 @@ header button {
 header button:hover{
 	background: #75669c;
 }
+
+
+
+
+.menu {
+	
+    text-align: left;
+}
+
+.menu__links{
+	display: none;
+}
+.menu__icon span:first-child{
+	width: 80%;
+	margin-left: 20%;
+}
+.menu__icon {
+   display: none;
+   width: 2.5rem;
+   height: 1.75rem;
+   position: relative;
+   cursor: pointer;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: .2rem;
+  width: 100%;
+  background: #333;
+  border-radius: .56rem;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: .8rem;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 1.6rem;
+ }
+
+.menu__links-item {
+    color: #333333;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 0 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu__links-item:hover {
+    color: #8d81ac;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 1rem;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+  display: block;  
+}
+
+
 
 
                      /* *****   MAIN SECTION 1   *******/
@@ -227,7 +318,7 @@ header button:hover{
 
 .column {
 	border: 1px solid #d5d5d5;
-	border-radius: 4px;
+	border-radius: .3rem;
 	font-size: .8rem;
 	font-weight: 700;
 	margin: 0 .6rem;
@@ -243,6 +334,9 @@ header button:hover{
 	background-color: #fff;
 	padding: 0 0.5rem;
 }
+.column img{
+	width: 1.3rem;
+}
 
 
 
@@ -252,30 +346,30 @@ header button:hover{
 .hard {
 	background-color: #f4f4f4;
 	width: 100%
-	min-height:600px;
+	min-height:37.5rem;
 	padding-top: 3rem;
 }
 
 .flex_order{
 	display: grid;
-	grid-template-columns: 5% 35% auto;
-	grid-template-rows: 5% auto;
+	grid-template-columns: 5% 40% auto;
+	grid-template-rows: 15% auto;
 	grid-gap: 2rem;
 }
 
 .advantages{
 	grid-column: 1/3;
 	grid-row: 1/3;
-	width: 350px;
+	width: 21.9rem;
 }
 
 .advantages div .piece{
-	min-width: 320px;
+	min-width: 20rem;
 }
 .piece{
 	display: flex;
 	padding: .6rem;
-	min-width: 505px;
+	min-width: 31.6rem;
 }
 .piece img{
 	width: 100%;
@@ -309,7 +403,7 @@ header button:hover{
 .window{
 	background: url( "../img/window.png") no-repeat;
 	background-size: cover;
-	width: 120%;
+	width: 100%;
 	height: auto;
 	overflow-x: hidden;
 	transform: translateY(10%);
@@ -346,6 +440,7 @@ header button:hover{
 }
 .profile img{
 	margin-right: 1.5rem;
+	width: 5.3rem;
 }
 /*                   *******     Slider     ********/
 .all{
@@ -378,32 +473,34 @@ article p{
 	font-size: 1.25rem;
 	color: #333;
 	width: 100%;
-	height: 50px;
+	height: 3.1rem;
 }
 
 #desktop:checked ~ #slider{ 
-	max-width: 870px; 
+	max-width: 54.4rem; 
 }
 
 #switch1:checked ~ #controls label:nth-child(3), 
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2){
 	background: url('../img/prev.png') no-repeat; 
+	background-size: .6rem;
 	float: left;
-	margin: 0 0 0 -45px; 
+	margin: 0 0 0 -2.8rem; 
 	display: block;
-	height: 68px;
-	width: 68px;
+	height: 4.25rem;
+	width: 4.25rem;
 }
 
 #switch1:checked ~ #controls label:nth-child(2), 
 #switch2:checked ~ #controls label:nth-child(3),
 #switch5:checked ~ #controls label:nth-child(1){
 	background: url('../img/next.png') no-repeat;
+	background-size: .6rem;
 	float: right;
-	margin: 0 -104px 0 0;
-	height: 68px;
-	width: 68px;
+	margin: 0 -6.5rem 0 0;
+	height: 4.25rem;
+	width: 4.25rem;
 }
 
 label, a{
@@ -453,7 +550,7 @@ article p:last-child{
 .facebook button {
 	width: 16.1rem;
 	height: 3.3rem;
-	border-radius: 5px;
+	border-radius: .3rem;
 	text-align: center;
 	font-size: 1.4rem;
 	font-weight: 700;
@@ -462,6 +559,15 @@ article p:last-child{
 .git img, .twitter img, .facebook img  {
 	margin-right: 2.5rem;
 	margin-left: 1.6rem
+}
+.git img{
+	width: 1.25rem;
+}
+.twitter img{
+	width: 1.19rem;
+}
+.facebook img{
+	width: .5rem;
 }
 
 .git button{
@@ -542,6 +648,29 @@ transform: scale(1.1);
 	margin-bottom: 2rem;
 }
 
+#logo1 {
+	width: 10.3rem;
+}
+
+#logo2 {
+	width: 9.25rem;
+}
+
+#logo3 {
+	width: 3.5rem;
+}
+
+#logo4 {
+	width: 14.1rem;
+}
+
+#logo5 {
+	width: 10.4rem;
+}
+#logo6 {
+	width: 6.75rem;
+}
+
 .grid_item p{
 	font-family: 'Source Sans Pro', sans-serif, italic;
 	font-weight: 700;
@@ -561,7 +690,7 @@ transform: scale(1.1);
 
 .string {
 	width: 70%;
-	height: 2px;
+	height: .1rem;
 	background: #655969;
 	margin: 6.25rem 0 3.1rem 0;
 	text-align: center;
@@ -570,3 +699,154 @@ transform: scale(1.1);
 
                      /* *****   MAIN SECTION 6   *******/
                  /*****   "Fork Subscription Pricing"  ****/
+
+.buy {
+	background: url('../img/fon2.png') center no-repeat;
+	background-size: cover;
+}
+
+.marketplace {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 2rem 0 4.9rem 0;
+}
+
+.marketplace h2{
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 8.1rem;
+}
+
+.price {
+	display: flex;
+	margin-bottom: 8.44rem;
+
+}
+ 
+.price button{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 15.9rem;
+	height: 28.75rem;
+	background: rgba(255,255,255,.11);
+	color: #fff;
+	margin: 0 .5rem 2rem .5rem;
+	transition: .7s linear;
+	outline: none;
+}
+
+.price button:hover {
+	background: rgba(0,0,0,.16);
+	transform: scale(1.36);
+	margin: 0 3.5rem 2rem 3.5rem;
+
+}
+
+.price button div:nth-child(1){
+	display: flex;
+	justify-content: center;
+	padding-top: 2.8rem;
+	width: 15.9rem;
+	height:6.1rem;
+	background: rgba(255,255,255,.06);
+	color: #fff;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-bottom: 2.2rem;
+}
+
+.price button p:nth-child(2){
+	color: #fff;
+	font-size: 3.76rem;
+	font-weight: 700;
+	margin-bottom: 1.4rem;
+}
+
+.price button p:nth-child(3){
+	color: rgba(255,255,255,.3);
+	font-size: .9rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+}
+
+.str{
+	width: 4rem;
+	height: .38rem;
+	background: #8d81ac;
+	margin-bottom: 1.8rem;
+}
+
+.bt{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10rem;
+	height: 2.6rem;
+	border-radius: 1.3rem;
+	background: rgba(255,255,255,.15);
+	text-transform: uppercase;
+	font-size: .94rem;
+	margin-top: 3rem;
+}
+
+.bias {
+	margin-top: 4.1rem;
+}
+
+.marketplace:last-child{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: .9rem;
+	font-weight: 300;
+	color: #a291a5;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+
+                     /* *****   MAIN SECTION 7   *******/
+ 						 /*****   "form"  ****/
+
+
+
+
+
+
+@media screen and (max-width: 1050px) {
+  .menu__icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+  header nav{
+  	display: none;
+  }
+  
+  .menu__links {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 5rem;
+    background-color: #333;
+    z-index: 1000;
+    overflow: auto;
+  }
+  
+  .menu__links-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+	
+}
