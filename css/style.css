@@ -70,8 +70,10 @@ header {
 .rigt_nav {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	flex-grow: 1;
+	justify-content: flex-end;
 	align-items: center;
+	margin-right: 2rem;
 }
 
 .logo { 
@@ -399,11 +401,11 @@ header button:hover{
 	width: 100%;
 }
 
-.flex_order{
+.order{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 100%;
+	width: 120%;
 	height: auto;
 	padding-top: 6.25rem;
 	padding-bottom: 0;
@@ -458,8 +460,7 @@ header button:hover{
 
 .window{
 	background: url( "../img/window.png") no-repeat;
-	width: 73.75rem;
-	height: 38.8rem;
+	
 	transform: translateY(10%);
 	
 }
@@ -602,19 +603,24 @@ article p:last-child{
 }
 /*                   *******     Slider     ********/
 
-.social_button,
-.git button,
-.twitter button,
-.facebook button {
+.social_button{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
 }
+.git button,
+.twitter button,
+.facebook button {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
 
 .git button,
 .twitter button,
 .facebook button {
+
 	width: 16.1rem;
 	height: 3.3rem;
 	border-radius: .3rem;
@@ -744,6 +750,7 @@ transform: scale(1.1);
 	font-size: 1rem;
 	color: #fff;
 	line-height: 1.5;
+	margin-bottom: 2rem;
 }
 
 .brands{
@@ -751,6 +758,7 @@ transform: scale(1.1);
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows:  1fr 1fr;
 	grid-gap: 3rem;
+	max-width: 35rem;
 	margin-top: 6.3rem;
 	padding: 0 2rem;
 }

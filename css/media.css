@@ -36,6 +36,9 @@
 	.window{display: none;}
   .window_media {
     display: flex;
+    width: 73.75rem;
+  height: 38.8rem;
+    
   }
   .side_media{
     display: block;
@@ -43,9 +46,10 @@
   .side{
     display: none;
   }
-  .flex_order{
+  .order{
     flex-direction: column;
     justify-content: center;
+
   }
   .advantages{
     justify-content: center;
