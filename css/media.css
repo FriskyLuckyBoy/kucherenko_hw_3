@@ -1,0 +1,48 @@
+@media screen and (max-width: 1050px) {
+  
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .menu__icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+  header nav{
+    display: none;
+  }
+  
+  .menu__links {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 5rem;
+    background-color: #333;
+    z-index: 1000;
+    overflow: auto;
+  }
+  html {
+    font-size: 18px;
+  }
+	.window{display: none;}
+  .window_media {
+    display: block;
+  }
+  .side_media{
+    display: block;
+  }
+  .side{
+    display: none;
+  }
+  .flex_order{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .advantages{
+    justify-content: center;
+  }
+}

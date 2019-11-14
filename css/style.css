@@ -41,15 +41,16 @@ h1,h2,h3,h4,h5,h6 {
 a {
 	text-decoration: none;
 }
-
-.container{
-	width: 80%;
-	max-width: 73.1rem;
-	margin: 0 auto;
-}
 body{
 	overflow-x: hidden;	
 }
+
+.container{
+	width: 80%;
+	/*max-width: 73.1rem;*/
+	margin: 0 auto;
+}
+
 
 
 	                  /* *****   HEADER   *******/
@@ -63,6 +64,14 @@ header {
 .header{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.rigt_nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .logo { 
@@ -117,23 +126,26 @@ header button {
 	outline: none;
 	cursor: pointer;
 	transition: .5s linear;
+	margin-left: 1.9rem;
+
 }
 
 header button:hover{
 	background: #75669c;
 }
 
-
-
-
 .menu {
-	
     text-align: left;
 }
 
 .menu__links{
 	display: none;
 }
+.menu__links-item {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+  }
 .menu__icon span:first-child{
 	width: 80%;
 	margin-left: 20%;
@@ -172,18 +184,60 @@ header button:hover{
  }
 
 .menu__links-item {
-    color: #333333;
+	 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border: 2px solid #3b3b3b;
+}
+.menu__links-item a{
+	color: #fff;
     font-size: 2rem;
     line-height: 2rem;
-    padding: 0 2rem;
-    text-decoration: none;
+	text-decoration: none;
     cursor: pointer;
+    padding-left: 2rem;
+   
 }
 
-.menu__links-item:hover {
+.menu__links-item a:hover {
     color: #8d81ac;
 }
 
+.home div{
+	width: .2rem;
+	height: 3.5rem;
+	background: #8d81ac;
+	margin-right: 2rem;
+	margin-left: .2rem;
+	 border-bottom: 2px solid #3b3b3b;
+}
+.home{
+	display: flex;
+	align-items: center;
+	 font-size: 2rem;
+    line-height: 2rem;
+    color: #858585;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.menu_link_social {
+	font-size: 2rem;
+    line-height: 2rem;
+    color: #858585;
+    margin: 2rem;
+}
+
+.menu_link_social img{
+	width: 3rem;
+	height: 3rem;
+	background: #fff;
+	margin-right: 3rem;
+	margin-top: 2rem;
+}
+.menu_link_social img:hover{
+	background: #8d81ac;
+}
 .menu.menu_state_open .menu__icon span:nth-child(1) {
   top: 1rem;
   width: 0%;
@@ -207,9 +261,6 @@ header button:hover{
 .menu.menu_state_open .menu__links {
   display: block;  
 }
-
-
-
 
                      /* *****   MAIN SECTION 1   *******/
 						/* *****   "Fork App"   *******/
@@ -345,35 +396,35 @@ header button:hover{
 
 .hard {
 	background-color: #f4f4f4;
-	width: 100%
-	min-height:37.5rem;
-	padding-top: 3rem;
+	width: 100%;
 }
 
 .flex_order{
-	display: grid;
-	grid-template-columns: 5% 40% auto;
-	grid-template-rows: 15% auto;
-	grid-gap: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	padding-top: 6.25rem;
+	padding-bottom: 0;
 }
 
 .advantages{
-	grid-column: 1/3;
-	grid-row: 1/3;
-	width: 21.9rem;
+	display: flex;
+	flex-direction: column;
+	max-width: 40rem;
+	margin-right: 4rem;
 }
 
-.advantages div .piece{
-	min-width: 20rem;
-}
 .piece{
 	display: flex;
 	padding: .6rem;
-	min-width: 31.6rem;
+	min-width: 30rem;
 }
 .piece img{
-	width: 100%;
-	height: 100%;
+	width: 6.9rem;
+	height: 5.3rem;
+	margin-right: 1.5rem;
 }
 
 .piece h4{
@@ -387,27 +438,39 @@ header button:hover{
 	line-height: 1.3rem;
 }
 
-.piece a{display: flex;
-	justify-content: center;
-	color: #323232;
-	font-size: .6rem;
-	margin-top: 1rem;
+.side_window{
+	display: flex;
+	flex-direction: column;
 }
 
 .side {
-	display: flex;
 	color: #8d81ac;
 	font-size: 3rem;
 }
 
+.side_media{
+	display: none;
+	color: #8d81ac;
+	font-size: 3rem;
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
 .window{
 	background: url( "../img/window.png") no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: auto;
-	overflow-x: hidden;
+	width: 73.75rem;
+	height: 38.8rem;
 	transform: translateY(10%);
 	
+}
+
+.window_media {
+	display: none;
+	background: url( "../img/window.png") no-repeat;
+	width: 73.75rem;
+	height: 38.8rem;
+	transform: translateY(20%);
+	margin-top: -6rem;
 }
 
 
@@ -474,6 +537,9 @@ article p{
 	color: #333;
 	width: 100%;
 	height: 3.1rem;
+}
+article a{
+	color: #8d81ac;
 }
 
 #desktop:checked ~ #slider{ 
@@ -543,6 +609,8 @@ article p:last-child{
 .facebook button {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .git button,
@@ -723,6 +791,8 @@ transform: scale(1.1);
 
 .price {
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 	margin-bottom: 8.44rem;
 
 }
@@ -735,15 +805,14 @@ transform: scale(1.1);
 	height: 28.75rem;
 	background: rgba(255,255,255,.11);
 	color: #fff;
-	margin: 0 .5rem 2rem .5rem;
+	margin: 0 1rem 2rem 1rem;
 	transition: .7s linear;
 	outline: none;
 }
 
 .price button:hover {
 	background: rgba(0,0,0,.16);
-	transform: scale(1.36);
-	margin: 0 3.5rem 2rem 3.5rem;
+	transform: scale(1.1);
 
 }
 
@@ -811,42 +880,190 @@ transform: scale(1.1);
                      /* *****   MAIN SECTION 7   *******/
  						 /*****   "form"  ****/
 
-
-
-
-
-
-@media screen and (max-width: 1050px) {
-  .menu__icon{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 0;
-  }
-  header nav{
-  	display: none;
-  }
-  
-  .menu__links {
-    position: absolute;
-    display: none;
-    top: 0;
-    right: 0;
-    left: 0;
-    margin-top: 5rem;
-    background-color: #333;
-    z-index: 1000;
-    overflow: auto;
-  }
-  
-  .menu__links-item {
-    display: block;
-    padding: 10px 0;
-    text-align: center;
-    color: #ffffff;
-  }
+.form{
+	background: #f4f4f4;
+	background-size: cover;
+	
 }
 
-@media screen and (max-width: 1200px) {
-	
+.form h4 {
+	color: #635c73;
+	font-size: 1.9rem;
+	font-weight: 700;
+}
+
+.pre_foot{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 3.5rem 1.9rem;
+}
+
+.mail_form button{
+	width: 8.75rem;
+	height: 2.6rem;
+	background: #8d81ac;
+	border-radius: 1.3rem;
+	font-size: .8rem;
+	text-transform: uppercase;
+	color: #fff;
+	outline: none;
+	margin: 1.3rem 1.3rem 1.3rem 0;
+
+}
+.mail_form input{
+	width: 21rem;
+	height: 2.6rem;
+	border-radius: 1.3rem;
+	color: #c8cbcf;
+	font-size: .9rem;
+	outline: none;
+	margin: 1.3rem 1.3rem 1.3rem 0;
+}
+
+
+                     /* *****   MAIN SECTION 8   *******/
+ 						 /*****   "form"  ****/
+
+.pre_footer_news{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+	padding-bottom: 8.4rem;
+}
+
+.about_news {
+	width: 30%;
+	min-width: 20.4rem;
+	margin-left: 1.9rem;
+}
+
+.about_news h5{
+	color: #d3d1da;
+	font-weight: 700;
+	font-size: 1.8rem;
+	margin-bottom: 3.6rem;
+	margin-top: 5rem;
+}
+
+.about_news p{
+	font-size: .8rem;
+	color: #848e97;
+	margin-bottom: .8rem;
+	line-height: 1.4rem;
+
+}
+.news1 h6{
+	color: #323232;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+.news2 h6, .news3 h6{
+	color: #8d81ac;
+	margin-bottom: .5rem;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+.news3 p{
+	margin-bottom: 1.5rem;
+}
+
+.news2 h6{
+	margin-bottom: 1rem;
+}
+.about_news button{
+	width: 10.3rem;
+	height: 2.25rem;
+	background: #f4f4f4;
+	border-radius: .3rem;
+	margin-top: 3.75rem;
+}
+
+.about_news a{
+	font-size: .9rem;
+	color: #8d81ac;
+}
+
+                     /* *****   footer   *******/
+
+.footer_elements{
+	display: flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+	line-height: 1.6rem;
+	padding:0 1.9rem 6.25rem 1.9rem;
+
+}
+
+.element1 .logo{
+margin-bottom: 2rem;
+}
+
+.element1 p{
+	color: #848e97;
+	font-size: .9rem;
+}
+.element1 {
+	width: 15.9rem;
+	margin-right: 2rem;
+}
+.element2 {
+	min-width: 8.1rem;
+	margin-right: 2rem;
+	list-style: none;
+}
+.element3 {
+	width: 15.1rem;
+	margin-right: 2rem;
+}
+.element4 {
+	width: 15.5rem;
+}
+
+.element2 p{
+	color: #323232;
+	margin-bottom: 1.2rem;
+}
+.element2 a{
+	font-size: .9rem;
+	color: #8d81ac;
+	line-height: 1.4rem;
+}
+.element2 ul{
+	list-style: none;
+}
+
+.element3 p:nth-child(1){
+	font-size: 1.88rem;
+	color: #3f3f3f;
+	font-weight: 700;
+	line-height: 1.7rem;
+	margin-bottom: 1rem;
+}
+.element3 p:nth-child(2){
+	color: #848e97;
+	font-size: .75rem;
+	text-transform: uppercase;
+	margin-bottom: 2.5rem;
+}
+.element3 p:nth-child(3){
+	color: #323232;
+	margin-bottom: 1.4rem;
+}
+.element3 p:nth-child(4){
+	font-size: .87rem;
+	color: #848e97;
+}
+
+.element4 p:nth-child(1){
+	color: #323232;
+	margin-bottom: 1.4rem;
+}
+.element4 p:nth-child(2){
+	font-size: .87rem;
+	color: #848e97;
 }
