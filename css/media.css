@@ -1,6 +1,14 @@
-@media screen and (max-width: 1050px) {
-  
-  
+@media screen and (max-width: 991px) {
+  html {
+    font: 5px/1.6 Montserat, sans-serif;
+  }
+  .brands{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 6.3rem;
+  padding: 0 2rem;
+}
 }
 
 @media screen and (max-width: 1200px) {
@@ -25,12 +33,9 @@
     z-index: 1000;
     overflow: auto;
   }
-  html {
-    font-size: 18px;
-  }
 	.window{display: none;}
   .window_media {
-    display: block;
+    display: flex;
   }
   .side_media{
     display: block;
