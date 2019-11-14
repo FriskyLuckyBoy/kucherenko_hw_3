@@ -80,7 +80,7 @@
   margin-top: 6.3rem;
   padding: 0 2rem;
 }
- @media screen and (max-width: 480px) {
+ @media screen and (max-width: 479px) {
   html {
     font: 8px/1.6 Montserat, sans-serif;
   }
@@ -112,8 +112,8 @@
 }
 }
 
- @media screen and (min-width: 1920px) {
+ @media screen and (min-width: 4096px) {
   html {
-    font: 25px/1.6 Montserat, sans-serif;
+    font: 35px/1.6 Montserat, sans-serif;
     }
   }

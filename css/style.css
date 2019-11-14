@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Source+Sans+Pro:400,700,700i&display=swap');
+
 
 * {
 	padding: 0;
@@ -451,6 +453,7 @@ header button:hover{
 
 .window_media img{
 	display: none;
+	width: 100%;
 	width: 73.75rem;
 	height: 38.8rem;
 	transform: translateY(10%);
@@ -475,13 +478,13 @@ header button:hover{
 	align-items: center;
 }
 
-.profile p:nth-child(1) {
+.profile h6{
 	font-size: 1.5rem;
 	color: #635c73;
 	font-weight: 700;
 }
 
-.profile p:nth-child(2) {
+.profile p {
 	color: #8d81ac;
 	margin-top: .5rem;
 }
@@ -500,7 +503,7 @@ header button:hover{
     top: 1rem;
 }
 
-#slides article{ 
+#slides .article{ 
 	width: 20%;
 	float: left;
 }
@@ -514,15 +517,14 @@ header button:hover{
 	width: 100%;
 	overflow: hidden;
 }
-
-article p{ 
+.article p{ 
 	text-align: center;
 	font-size: 1.25rem;
 	color: #333;
 	width: 100%;
 	height: 3.1rem;
 }
-article a{
+.article a{
 	color: #8d81ac;
 }
 
@@ -581,7 +583,7 @@ label, a{
 	opacity: 0.6;
 }
 
-article p:last-child{
+.article p:last-child{
 	color:#848e97;
 	margin-top: 2rem;
 }
@@ -787,7 +789,7 @@ transform: scale(1.1);
 
 }
  
-.price button{
+.price .button{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -800,13 +802,13 @@ transform: scale(1.1);
 	outline: none;
 }
 
-.price button:hover {
+.price .button:hover {
 	background: rgba(0,0,0,.16);
 	transform: scale(1.1);
 
 }
 
-.price button div:nth-child(1){
+.price .button div:nth-child(1){
 	display: flex;
 	justify-content: center;
 	padding-top: 2.8rem;
@@ -819,14 +821,14 @@ transform: scale(1.1);
 	margin-bottom: 2.2rem;
 }
 
-.price button p:nth-child(2){
+.price .button p:nth-child(2){
 	color: #fff;
 	font-size: 3.76rem;
 	font-weight: 700;
 	margin-bottom: 1.4rem;
 }
 
-.price button p:nth-child(3){
+.price .button p:nth-child(3){
 	color: rgba(255,255,255,.3);
 	font-size: .9rem;
 	text-transform: uppercase;
@@ -965,7 +967,10 @@ transform: scale(1.1);
 .news2 h6{
 	margin-bottom: 1rem;
 }
-.about_news button{
+.about_news .button1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 10.3rem;
 	height: 2.25rem;
 	background: #f4f4f4;
