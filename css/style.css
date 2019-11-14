@@ -460,12 +460,13 @@ header button:hover{
 
 .window{
 	background: url( "../img/window.png") no-repeat;
-	
+	width: 73.75rem;
+	height: 38.8rem;
 	transform: translateY(10%);
 	
 }
 
-.window_media {
+.window_media img{
 	display: none;
 	width: 73.75rem;
 	height: 38.8rem;
@@ -758,7 +759,6 @@ transform: scale(1.1);
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows:  1fr 1fr;
 	grid-gap: 3rem;
-	max-width: 35rem;
 	margin-top: 6.3rem;
 	padding: 0 2rem;
 }
