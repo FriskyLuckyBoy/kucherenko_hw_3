@@ -1,16 +1,38 @@
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 6000px) {
   html {
-    font: 14px/1.6 Montserat, sans-serif;
+    font: 50px/1.6 Montserat, sans-serif;
   }
-  .brands{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 25rem;
-  margin-top: 6.3rem;
-  padding: 0 2rem;
 }
-.menu__icon{
+
+@media screen and (max-width: 5000px) {
+  html {
+    font: 40px/1.6 Montserat, sans-serif;
+  }
+}
+
+@media screen and (max-width: 4000px) {
+  html {
+    font: 40px/1.6 Montserat, sans-serif;
+  }
+}
+
+@media screen and (max-width: 3000px) {
+  html {
+    font: 20px/1.6 Montserat, sans-serif;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  html {
+    font: 18px/1.6 Montserat, sans-serif;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  html {
+    font: 18px/1.6 Montserat, sans-serif;
+  }
+ .menu__icon{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -31,19 +53,10 @@
     z-index: 1000;
     overflow: auto;
   }
-}
-
-@media screen and (max-width: 1300px) {
-  html {
-    font: 16px/1.6 Montserat, sans-serif;
-  }
- 
   
-	.window{display: none;}
+  .window{display: none;}
   .window_media img{
     display: flex;
-
-    
   }
   .side_media{
     display: block;
@@ -62,13 +75,11 @@
   }
 }
 
-
-  @media screen and (max-width: 769px) {
+@media screen and (max-width: 1120px) {
   html {
-    font: 16px/1.6 Montserat, sans-serif;
+    font: 18px/1.6 Montserat, sans-serif;
   }
-
-.brands{
+  .brands{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -76,32 +87,54 @@
   margin-top: 6.3rem;
   padding: 0 2rem;
 }
+
 }
+
+
+
+ @media screen and (max-width: 990px) {
+  html {
+    font: 18px/1.6 Montserat, sans-serif;
+  }
+
+  
+}
+
+  @media screen and (max-width: 769px) {
+  html {
+    font: 14px/1.6 Montserat, sans-serif;
+  }
+
+  
+}
+
+ @media screen and (max-width: 500px) {
+  html {
+    font: 14px/1.6 Montserat, sans-serif;
+  }
+
+  
+  .article p:last-child{
+    margin-top: 4.2rem;
+  }
  @media screen and (max-width: 481px) {
   html {
     font: 10px/1.6 Montserat, sans-serif;
   }
   
-.brands{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 25rem;
-  margin-top: 6.3rem;
-  padding: 0 2rem;
-  }
+  
 }
-
  @media screen and (max-width: 321px) {
   html {
     font: 8px/1.6 Montserat, sans-serif;
   }
- .brands{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 25rem;
-  margin-top: 6.3rem;
-  padding: 0 2rem;
+
+.article p:last-child{
+  margin-top: 5rem;
 }
 }
+
+
+
+
+

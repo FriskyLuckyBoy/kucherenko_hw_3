@@ -748,6 +748,7 @@ transform: scale(1.1);
 	grid-gap: 3rem;
 	margin-top: 6.3rem;
 	padding: 0 2rem;
+	max-width: 70rem;
 }
 
 .string {
@@ -1004,6 +1005,7 @@ margin-bottom: 2rem;
 	color: #848e97;
 	font-size: .9rem;
 	margin-top: -2rem;
+	margin-bottom: 2rem;
 }
 .element1 {
 	width: 15.9rem;
@@ -1025,7 +1027,7 @@ margin-bottom: 2rem;
 
 .element2 p{
 	color: #323232;
-	margin-bottom: 1.2rem;
+	margin-bottom: 1rem;
 }
 .element2 a{
 	font-size: .9rem;
