@@ -587,7 +587,7 @@ label, a{
 
 .article p:last-child{
 	color:#848e97;
-	margin-top: 2rem;
+	margin-top: 3rem;
 }
 /*                   *******     Slider     ********/
 
@@ -1003,6 +1003,7 @@ margin-bottom: 2rem;
 .element1 p{
 	color: #848e97;
 	font-size: .9rem;
+	margin-top: -2rem;
 }
 .element1 {
 	width: 15.9rem;
@@ -1011,6 +1012,7 @@ margin-bottom: 2rem;
 .element2 {
 	min-width: 8.1rem;
 	margin-right: 2rem;
+	margin-bottom: 2rem;
 	list-style: none;
 }
 .element3 {
