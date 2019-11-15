@@ -1020,6 +1020,7 @@ margin-bottom: 2rem;
 .element3 {
 	width: 15.1rem;
 	margin-right: 2rem;
+	margin-bottom: 1rem;
 }
 .element4 {
 	width: 15.5rem;
@@ -1062,7 +1063,8 @@ margin-bottom: 2rem;
 
 .element4 p:nth-child(1){
 	color: #323232;
-	margin-bottom: 1.4rem;
+	margin-bottom: 1rem;
+
 }
 .element4 p:nth-child(2){
 	font-size: .87rem;
